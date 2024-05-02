@@ -1,0 +1,110 @@
+---
+title: “'部署失败：'cache'命名空间错误中未定义命令'”
+description: 本文为部署失败并出现以下错误**在缓存命名空间中未定义命令**的问题提供了解决方案。
+feature: Deploy
+role: Developer
+exl-id: ee2bddba-36f7-4aae-87a1-5dbeb80e654e
+source-git-commit: 1a8a4e1eada859a6712a43536d7bad26d1ce1244
+workflow-type: tm+mt
+source-wordcount: '409'
+ht-degree: 0%
+
+---
+
+# 部署失败：“cache”命名空间错误中未定义命令
+
+>[!WARNING]
+>
+>在执行这些步骤之前，请先在实时生产站点中备份数据库。
+
+本文为部署失败并且日志中的错误之一类似以下时的问题提供了解决方案：
+
+```
+[YEAR-DAYTIME] ERROR: [127] The command "php ./bin/magento cache:flush --ansi --no-interaction" failed.
+        There are no commands defined in the "cache" namespace.
+...
+      W:     There are no commands defined in the "cache" namespace.
+```
+
+## 受影响的产品和版本
+
+云基础架构上的Adobe Commerce 2.4.x
+
+## 问题  
+
+<u>重现问题的步骤</u>：
+
+尝试部署。 
+
+<u>预期结果</u>：
+
+您已成功部署。
+
+<u>实际结果</u>：
+
+您未成功部署。 在日志中，您会看到一个部署错误，其中包含类似于以下内容的消息 *缓存命名空间中没有命令*.
+
+### 原因
+
+此 **core_config_data** 表中包含数据库中不再存在的商店ID或网站ID的配置。 当您从另一个实例/环境导入了数据库备份，并且这些作用域的配置保留在数据库中时会发生这种情况，尽管关联的存储/网站已被删除。
+
+### 解决方案
+
+如果您只有一个网站，则对这些网站的第二次测试不适用，并且您只需要测试商店。
+
+要解决此问题，请确定这些配置中剩余的无效行。
+
+1. SSH到服务器并运行此命令：
+
+   `bin/magento`
+
+1. 该错误消息可能指示哪些行和表保留在已删除站点的数据库中。 例如，以下错误表示未找到所请求的存储：
+
+   ```...
+   In StoreRepository.php line 112:
+   
+   The store that was requested wasn't found. Verify the store and try again.
+   ```
+
+1. 运行此MySql查询以验证是否找不到存储，如步骤2中的错误消息所示。 
+
+   ```sql
+   select distinct scope_id from core_config_data where scope='stores' and scope_id not in (select store_id from store);
+   ```
+
+1. 运行以下MySql语句以删除无效行： 
+
+   ```sql
+   delete from core_config_data where scope='stores' and scope_id not in (select store_id from store); 
+   ```
+
+1. 再次运行此命令：
+
+   `bin/magento`
+
+   如果您收到如下错误，指示未找到所请求的ID为X的网站，则数据库中会保留来自网站以及已删除商店的配置。
+
+   ```
+   In WebsiteRepository.php line 110:
+   
+   The website with id X that was requested wasn't found. Verify the website and try again.
+   ```
+
+   运行此MySql查询并验证是否找不到该网站：
+
+   ```sql
+   select distinct scope_id from core_config_data where scope='stores' and scope_id not in (select store_id from store);
+   ```
+
+1. 运行此MySql语句可从网站配置中删除无效行：
+
+   ```sql
+   delete from core_config_data where scope='websites' and scope_id not in (select website_id from store_website);
+   ```
+
+要确认解决方案是否有效，请运行 `bin/magento` 再次执行命令。 您应该不会再看到错误，并且可以成功部署。
+
+## 相关阅读
+
+* [Adobe Commerce部署疑难解答程序](/docs/commerce-knowledge-base/kb/troubleshooting/deployment/magento-deployment-troubleshooter.html)
+* [检查部署日志，如果Cloud UI出现“日志截断”错误](/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/checking-deployment-log-if-the-cloud-ui-shows-log-snipped-error.html)

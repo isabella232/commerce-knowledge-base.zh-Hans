@@ -1,0 +1,90 @@
+---
+title: 更改数据库实体（订单、发票、贷项通知单等）的增量ID 在特定存储上
+description: 本文讨论如何更改Adobe Commerce数据库(DB)实体（订单、发票、贷项通知单等）的增量ID 在特定Adobe Commerce存储区中使用“ALTER TABLE”SQL语句。
+exl-id: 3704dd97-3639-44dc-9b8b-cf09f0c04e6c
+feature: Invoices
+source-git-commit: 0ad52eceb776b71604c4f467a70c13191bb9a1eb
+workflow-type: tm+mt
+source-wordcount: '456'
+ht-degree: 0%
+
+---
+
+# 更改数据库实体（订单、发票、贷项通知单等）的增量ID 在特定存储上
+
+本文讨论如何更改Adobe Commerce数据库(DB)实体（订单、发票、贷项通知单等）的增量ID 在特定Adobe Commerce商店中使用 `ALTER TABLE` sql语句。
+
+## 受影响的版本
+
+* Adobe Commerce内部部署：2.x.x
+* 云基础架构上的Adobe Commerce：2.x.x
+* MySQL：任意 [支持的版本](https://devdocs.magento.com/guides/v2.2/install-gde/system-requirements-tech.html#database)
+
+## 您何时需要更改增量ID（案例）
+
+在以下情况下，您可能需要更改新数据库实体的增量ID：
+
+* 在Live站点上进行硬备份还原之后
+* 某些订单记录已丢失，但支付网关（如PayPal）已使用其ID作为您的当前商家帐户。 在这种情况下，付款网关将停止处理具有相同ID的新订单，并返回“重复发票ID”错误
+
+>[!NOTE]
+>
+>您还可以通过在PayPal的“付款接收首选项”中允许每个发票ID多次付款，修复PayPal的付款网关问题。 请参阅 [PayPal网关已拒绝请求 — 重复发票问题](/help/troubleshooting/payments/paypal-gateway-rejected-request-duplicate-invoice-issue.md) 在我们的支持知识库中。
+
+## 必备步骤
+
+1. 查找应更改新增量ID的存储和实体。
+1. [连接](https://devdocs.magento.com/guides/v2.2/install-gde/prereq/mysql_remote.html) 到MySQL数据库。 对于云基础架构上的Adobe Commerce，您首先需要 [通过SSH连接到环境](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/secure-connections.html).
+1. 使用以下查询检查实体序列表的当前auto\_increment值：
+
+```sql
+SHOW TABLE STATUS FROM `{database_name}` WHERE `name` LIKE 'sequence_{entity_type}_{store_id}';
+```
+
+### 示例
+
+如果您要检查应用商店中订单的自动递增，其中 *ID=1*，则表名称为：
+
+```sql
+'sequence_order_1'
+```
+
+如果 `auto_increment` 列为 *1234*，则在商店中下单的订单 *ID=1* 将具有 *ID \#100001234*.
+
+### 相关文档
+
+* [设置远程MySQL数据库连接](https://devdocs.magento.com/guides/v2.2/install-gde/prereq/mysql_remote.html) 在我们的开发人员文档中。
+
+## 更新实体以更改增量ID
+
+使用以下查询更新实体：
+
+```sql
+ALTER TABLE sequence_{entity_type}_{store_id} AUTO_INCREMENT = {new_increment_value};
+```
+
+>[!WARNING]
+>
+>重要信息：新增量值必须大于当前增量值，不得小于！
+
+### 示例
+
+执行以下查询后：
+
+```sql
+ALTER TABLE sequence_order_1 AUTO_INCREMENT = 2000;
+```
+
+在商店的下一次订单 *ID=1* 将具有 *ID \#100002000*.
+
+## 有关生产环境(Cloud)的其他建议步骤
+
+执行之前 `ALTER TABLE` 在云基础架构上的Adobe Commerce的生产环境中进行查询，我们强烈建议执行以下步骤：
+
+* 测试在暂存环境中更改增量ID的整个过程
+* [创建](/help/how-to/general/create-database-dump-on-cloud.md) 在出现故障时恢复生产数据库的数据库备份
+
+## 相关文档
+
+* [在云上创建数据库转储](/help/how-to/general/create-database-dump-on-cloud.md) 在我们的支持知识库中。
+* [通过SSH连接到环境](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/secure-connections.html) 在我们的开发人员文档中。
