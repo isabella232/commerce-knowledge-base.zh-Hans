@@ -3,9 +3,9 @@ title: '云上的备份（快照）：常见问题解答'
 description: 本文介绍了在云基础架构上的Adobe Commerce上使用快照备份环境的要点。
 exl-id: 0077db74-3e7e-4c98-b215-7f6c089f49e8
 feature: Cloud, Iaas
-source-git-commit: 9491279d147eac9ed36ad236c227b08e7c6e0211
+source-git-commit: 0958a8923e27c1341f4b536812b26205685b2b81
 workflow-type: tm+mt
-source-wordcount: '549'
+source-wordcount: '550'
 ht-degree: 0%
 
 ---
@@ -57,7 +57,7 @@ ht-degree: 0%
 
 ## 恢复环境快照
 
-要恢复现有快照（在支持的环境中：集成、暂存、生产开始计划或集成Pro计划），请按照中的步骤操作 [备份管理：恢复手动备份](/docs/commerce-cloud-service/user-guide/develop/storage/snapshots#restore-a-manual-backup) 在我们的Commerce on Cloud Infrastructure指南中。
+要恢复现有快照（在支持的环境中：集成、暂存、生产开始计划或集成Pro计划），请按照中的步骤操作 [备份管理：恢复手动备份](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/storage/snapshots#restore-a-manual-backup) 在我们的Commerce on Cloud Infrastructure指南中。
 
 ## 数据库(DB)备份
 
