@@ -4,9 +4,9 @@ description: 本文修复了以下问题：您尝试在Commerce管理员中将�
 exl-id: 8e3bb65c-ea75-4af4-ad4b-4d94ab219bbb
 feature: Cache, Data Import/Export, Products, Variables
 role: Developer
-source-git-commit: 465eb89cf5c5169b0b459ab7e6bdcbd418781093
+source-git-commit: d55702ab97f3770d0ec71322f6c24448f0169ad4
 workflow-type: tm+mt
-source-wordcount: '527'
+source-wordcount: '578'
 ht-degree: 0%
 
 ---
@@ -92,6 +92,10 @@ Adobe Commerce应用程序部件版本2.3.2中的导出功能存在的已知问�
 >[!NOTE]
 >
 >如果您找不到 `.magento.env.yaml` 文件，如果您认为该文件已被删除，则需要创建一个 `.magento.env.yaml`. 最初可能为空，您可以根据需要在该处添加信息。 请参阅以下文章： [配置环境变量以进行部署](/docs/commerce-cloud-service/user-guide/configure/env/configure-env-yaml.html) 和 [环境变量](/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-intro.html) 在我们的开发人员文档中。
+
+>[!TIP]
+>
+>[YAML文件](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/configure-env-yaml.html) 区分大小写，因此不允许使用制表符。 请注意在整个.magento.env.yaml文件中使用一致的缩进，否则您的配置可能无法按预期工作。 文档和示例文件中的示例使用双空格缩进。 使用ece-tools validate命令检查配置。
 
 >[!NOTE]
 >
