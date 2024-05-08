@@ -2,9 +2,9 @@
 user-guide-title: Adobe Commerce 知识库
 user-guide-description: 排除 Commerce 商店故障以及对其进行维护所需的一切。
 breadcrumb-title: Commerce KB
-source-git-commit: cdfcfbb1c6b91eb06bb028179676d022a1e27000
+source-git-commit: 76be98e46941bc6a7857aba8e95c8415ce3fc978
 workflow-type: tm+mt
-source-wordcount: '11006'
+source-wordcount: '11017'
 ht-degree: 0%
 
 ---
@@ -1110,6 +1110,7 @@ ht-degree: 0%
       * [提交不正确的文件时出现部署错误](/help/troubleshooting/deployment/deployment-error-when-committing-incorrect-files.md)
       * [未找到修补程序的部署错误](/help/troubleshooting/deployment/deployment-errors-where-patches-not-found.md)
       * [部署失败：“cache”命名空间错误中未定义命令](/help/troubleshooting/deployment/deployment-failed-there-are-no-commands-defined-in-the-cache-namespace-error.md)
+      * [在env：COMPOSER_AUTH或auth.json中，部署失败并显示正确的访问密钥](/help/troubleshooting/deployment/deployment-failed-with-correct-access-key-env-composer-auth.md)
    * 已知问题 {#known-issues-patches-attached}
       * [[!DNL UPS] 装运方法集成迁移自 [!DNL SOAP] 到 [!DNL RESTful API]](/help/troubleshooting/known-issues-patches-attached/ups-shipping-method-integration-migration-from-soap-to-restful-api.md)
       * [[!DNL USPS] Ground Advantage配送方式支持AC-9182的修补程序](/help/troubleshooting/known-issues-patches-attached/usps-ground-advantage-shipping-method-support-hotfix-for-ac-9182.md)
