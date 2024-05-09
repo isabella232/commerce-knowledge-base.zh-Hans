@@ -1,11 +1,12 @@
 ---
-title: “在env：COMPOSER_AUTH或auth.json中使用正确的访问密钥部署失败”
+title: 在env：COMPOSER_AUTH或auth.json中，部署失败并显示正确的访问密钥
 description: 本文为部署失败并出现以下错误“无法下载https://repo.magento.com/archives/magento/module-customer-balance/magento-module-customer-balance-100.4.0.0.zip文件(HTTP/1.1 404 Not Found)”的问题提供了解决方案。
 feature: Deploy
 role: Admin
-source-git-commit: 8e0aca8f528b017e288ae6fb19b072a5cc04761b
+exl-id: a18f4213-7381-4001-a5a0-3f8db4525469
+source-git-commit: 54ef4e95cf0e3f5822ff5e5c566129fab331f784
 workflow-type: tm+mt
-source-wordcount: '243'
+source-wordcount: '244'
 ht-degree: 0%
 
 ---
@@ -58,4 +59,4 @@ W:   The "https://repo.magento.com/archives/magento/module-customer-balance/mage
 ## 相关阅读
 
 * [无法访问云存储库上的Adobe Commerce：部署时出现403 Forbidden或404 Not Found错误](/docs/commerce-knowledge-base/kb/troubleshooting/deployment/magento-commerce-cloud-repo-could-not-be-accessed-403-forbidden-or-404-not-found-error-when-deploying.html)
-* [部署错误：下载时发生错误7 ...端口443：连接被拒绝](/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/deployment-error-downloading-connection-refused-adobe-commerce.html)
+* [部署错误：下载时发生错误7 ...端口443：连接被拒绝](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/deployment/deployment-error-downloading-connection-refused-adobe-commerce)
