@@ -1,19 +1,19 @@
 ---
 title: 检查部署日志，如果Cloud UI出现“日志截断”错误
-description: 本文为以下问题提供了解决方案：云基础架构上的Adobe Commerce UI在尝试查看部署日志时显示*日志片段，因为它太长*错误消息。
+description: 本文为以下问题提供了解决方案：云基础架构上的Adobe Commerce在尝试在云项目UI上查看部署日志时，显示*日志片段，因为它太长*错误消息。
 exl-id: 04d28741-72c1-4722-be46-425fe136b9a6
 feature: Cloud, Deploy, Logs, Paas
 role: Developer
-source-git-commit: 958179e0f3efe08e65ea8b0c4c4e1015e3c5bb76
+source-git-commit: 71bec5b99063d771982f6dcab111b9e5a4aaec69
 workflow-type: tm+mt
-source-wordcount: '301'
+source-wordcount: '328'
 ht-degree: 0%
 
 ---
 
-# 检查部署日志，如果Cloud UI出现“日志截断”错误
+# 检查部署日志（如果云UI具有） *日志片段* 错误
 
-本文为云基础架构UI上的Adobe Commerce显示的问题，提供了一个解决方案 *日志被截断，因为它太长* 尝试查看部署日志时出现错误消息。
+本文为云基础架构UI上的Adobe Commerce显示了 *日志被截断，因为它太长* 尝试在云项目UI上查看部署日志时出现错误消息。 (不适用于 [Adobe Commerce Cloud控制台](https://console.adobecommerce.com/).)
 
 ## 受影响的产品
 
@@ -21,7 +21,7 @@ ht-degree: 0%
 
 ## 问题
 
-在尝试查看部署日志时，云基础架构UI上的Adobe Commerce显示以下错误消息： *日志被截断，因为它太长*.
+尝试在云项目UI上查看部署日志时，云基础架构UI上的Adobe Commerce显示以下错误消息： *日志被截断，因为它太长*.
 
 ## 重现问题的步骤
 
