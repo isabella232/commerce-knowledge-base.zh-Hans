@@ -4,9 +4,9 @@ description: “**问题：**您希望向信任的同事提供共享访问权限
 exl-id: 9e03c031-2359-42a6-9de4-943451a16456
 feature: Cache
 role: Developer
-source-git-commit: 1d2e0c1b4a8e3d79a362500ee3ec7bde84a6ce0d
+source-git-commit: e77322c04c7245538c10dfb397094eee6cfe6be9
 workflow-type: tm+mt
-source-wordcount: '403'
+source-wordcount: '500'
 ht-degree: 0%
 
 ---
@@ -39,6 +39,19 @@ ht-degree: 0%
 1. 如果缺少特定资源，请联系帐户所有者（主要帐户所有者）。
 
 如果您仍然遇到问题，请联系您的Adobe客户团队或发送电子邮件至grp-Magento-HelpCenterLoginIssues@adobe.com。 请指定您的姓名以及与您的帐户关联的电子邮件。
+
+## 我使用共享访问并单击 [!UICONTROL Support]但是当我开张新票时， [!UICONTROL Organization] 下拉列表未显示
+
+**问题：** 我已切换到共享访问帐户，但无法访问 **[!UICONTROL Support tab]** （例如）。
+
+**可能的原因：** 您仅被授予帐户中一个商人的共享访问权限。
+
+**解决方案：**
+
+1. 切换回 **[!UICONTROL My Account]**.
+1. 如果它仅列出一个 **[!UICONTROL Shared Name]**，则将 *默认组织* 您的门票将在下面打开。
+
+如果您仍然遇到问题，请联系您的Adobe客户团队或发送电子邮件至grp-Magento-HelpCenterLoginIssues@adobe.com。 指定您的姓名以及与您的帐户关联的电子邮件。
 
 ## 我曾经使用共享访问，但仍会看到我的票证，而不是共享票证
 

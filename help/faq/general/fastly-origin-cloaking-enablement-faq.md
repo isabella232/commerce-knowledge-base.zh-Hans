@@ -2,9 +2,9 @@
 title: '"[!DNL Fastly] origin coloaking启用常见问题解答”'
 description: 此常见问题解答讨论了以下常见问题 [!DNL Fastly] Adobe Commerce中的源遮盖功能（已于2021年完全实施）。
 exl-id: d608abe7-7d64-44ce-bea1-34b201c29113
-source-git-commit: 348a1f6e455aff9ad7c562ea20c95f27c9ee0b86
+source-git-commit: 1021a1ab81481f92e850bd49330f1742fe9a21f2
 workflow-type: tm+mt
-source-wordcount: '320'
+source-wordcount: '305'
 ht-degree: 0%
 
 ---
@@ -27,7 +27,7 @@ ht-degree: 0%
 
 ## 我是否需要请求为项目启用源遮蔽？
 
-不适用。 此功能应该已在所有云项目上实施，并且自2021年以来配置的任何项目默认情况下都将启用此功能。 但是，您可以请求通过以下方式为项目禁用源遮蔽 [提交支持请求](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket).
+不适用。 此功能应该已在所有云项目上实施，并且自2021年以来配置的任何项目默认情况下都将启用此功能。
 
 ## 来源遮蔽是否会更改传出IP地址？
 
@@ -37,8 +37,22 @@ ht-degree: 0%
 
 [!DNL Fastly] 不会缓存API调用，因此客户端应该不会受到此更改的影响。 源位置遮盖只会阻止直接转到源位置的请求，例如：
 
+* 生产
+
 ```php
 mywebsite.com.c.abcdefghijkl.ent.magento.cloud
+```
+
+* 暂存
+
+```php
+mcstaging2.mywebsite.com.c.abcdefghijkl.dev.ent.magento.cloud
+```
+
+* 暂存X
+
+```php
+mcstagingX.mywebsite.com.c.abcdefghijkl.X.dev.ent.magento.cloud
 ```
 
 在本例中，如果客户端将URL更改为，则他们仍可以点击API ``mywebsite.com``：
