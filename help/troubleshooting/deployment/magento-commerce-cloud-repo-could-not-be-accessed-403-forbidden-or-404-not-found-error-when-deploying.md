@@ -4,9 +4,9 @@ description: '本文讨论如何解决云基础架构上的Adobe Commerce部署�
 exl-id: 2f72d80a-05b2-4908-8fa8-61d06885ed07
 feature: Cloud, Deploy, Paas, Variables
 role: Developer
-source-git-commit: 958179e0f3efe08e65ea8b0c4c4e1015e3c5bb76
+source-git-commit: 9ca95444aa785191e4c8bf1603773f3430414797
 workflow-type: tm+mt
-source-wordcount: '596'
+source-wordcount: '608'
 ht-degree: 0%
 
 ---
@@ -59,7 +59,7 @@ ht-degree: 0%
 执行以下步骤来解决授权密钥的问题（有关每个步骤的更多详细信息，请参阅以下部分）：
 
 1. 获取有效的授权密钥（如果绝对确定您的密钥有效，请跳过此步骤）。
-1. 将键值添加到中 `env:COMPOSER_AUTH` 变量（或确保存在正确的值），并检查是否在变量和 `auth.json` 文件，该文件位于项目根目录下。
+1. 将键值添加到中 `env:COMPOSER_AUTH` 变量（或确保存在正确的值），并检查键值是否在项目级别和环境级别的变量中一致指定，以及是否在 `auth.json` 文件（如果存在）。
 1. 更新或删除 `auth.json`，以便在未指定授权密钥值或具有其他值时，在单个位置配置密钥。
 
 ### 1.获取有效的授权密钥
