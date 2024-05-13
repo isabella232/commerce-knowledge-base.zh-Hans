@@ -3,9 +3,9 @@ title: Adobe Commerce帮助中心用户指南
 description: 了解如何将支持工单提交到Adobe Commerce帮助中心，提供对帐户的共享访问权限，以及导航Adobe Commerce知识库。
 exl-id: 9eb4814f-c9c4-4dd0-b68a-87d712898aa5
 feature: Support, Roles/Permissions, Tools and External Services, Admin Workspace, Iaas, Marketing Tools
-source-git-commit: a2e68f63a53013b6f0b8bfa12838fafe2bb6e6c7
+source-git-commit: 4e8833d100b776ca3c66a96274cde2d68eb0fd10
 workflow-type: tm+mt
-source-wordcount: '3924'
+source-wordcount: '3993'
 ht-degree: 0%
 
 ---
@@ -33,9 +33,9 @@ ht-degree: 0%
    * [支持票证中的信息](#info-in-support-ticket)
    * [Adobe Commerce帮助中心起始页上未显示“提交票证”链接](#no-submit-link)
    * [*“请验证您的电子邮件地址”*](#verify-email-address)
-   * [票证提交表单：商家未显示在“组织”下拉列表中](#merchant-not-displayed)
+   * [票证提交表单：在“组织”下拉列表中不显示商家](#merchant-not-displayed)
 
-* [跟踪您的票证](#track-tickets)
+* [跟踪票证](#track-tickets)
 * [Adobe Commerce P1热线（需要登录）](#P1-hotline)
 * [Adobe Commerce分担责任运营模型（需要登录）](#shared-responsibility-operational-model)
 * [支持票证字段说明](#ticket-fields-explained)
@@ -73,21 +73,21 @@ Adobe Commerce Ticketing System允许使用支持工单来解决您在使用Adob
 
 要登录Adobe Commerce帮助中心，请执行以下步骤：
 
-1. 访问帮助中心，网址为 <https://support.magento.com>.
+1. 访问“帮助中心”，网址为 <https://support.magento.com>.
 1. 单击 **登录** 在右上角。
 
 使用您的Magento帐户凭据登录。 有关更多信息，请参阅 [您的Magento帐户](https://experienceleague.adobe.com/docs/commerce-admin/start/commerce-account/commerce-account-create.html) 在我们的用户指南中。
 
 ### <strong>提交支持服务单</strong> {#submit-ticket}
 
-成功登录后，您可以使用“帮助中心”起始页、“Magento帐户”页和“Magento云帐户”页提交支持票证。
+成功登录后，您可以使用帮助中心起始页面、Magento帐户页面和Magento云帐户页面提交支持票证。
 
-* 如果您是 **帐户所有者** 请按照以下步骤操作。
-* 如果您是 **共享访问用户，必须先切换帐户** [访问共享帐户（切换帐户）](#switch-accounts)然后，您可以继续执行以下步骤。
+* 如果您是 **帐户所有者** 请按以下步骤操作。
+* 如果您是 **共享访问用户，必须首先切换帐户** [访问共享帐户（切换帐户）](#switch-accounts)，然后您可以继续执行以下步骤。
 
 #### 帮助中心起始页 {#submit-ticket-help-center-start-page}
 
-要使用Adobe Commerce帮助中心的起始页提交新的支持工单，请执行以下步骤：
+要使用Adobe Commerce帮助中心的起始页面提交新的支持票证，请执行以下步骤：
 
 1. 转到 [Adobe Commerce帮助中心](https://support.magento.com/hc/en-us).
 1. 单击 **提交票证** 在右上角。
@@ -115,19 +115,19 @@ Adobe Commerce Ticketing System允许使用支持工单来解决您在使用Adob
 
 #### 云控制台 {#submit-ticket-magento-cloud-account-page}
 
-要使用Cloud Console提交新的支持工单，请执行以下步骤：
+要使用Cloud Console提交新的支持票证，请执行以下步骤：
 
 1. 登录到 [云控制台](https://console.adobecommerce.com).
 1. 选择 **[!UICONTROL Support]** 在用户菜单中。
 1. 此 **[!UICONTROL My Tickets]** 页面加载。
 1. 单击 **[!UICONTROL Submit a ticket]** 在右上角。
 1. 填写字段。
-1. 单击 **提交**.
-1. 单击 **[!UICONTROL Submit]**.
+1. 点击 **提交**.
+1. 点击 **[!UICONTROL Submit]**.
 
 #### 支持票证中的信息 {#info-in-support-ticket}
 
-标有红色星号( **\*** )，为必填项，且必须填写。 如果将其中任何字段留空，您将无法提交票证。
+标有红色星号( **\*** )，必须填写。 如果您将这些字段中的任何一个留空，您将无法提交票证。
 
 请参阅 [票证字段说明](#ticket-fields-explained) 下文，以了解更多详细信息。
 
@@ -167,8 +167,8 @@ Adobe Commerce Ticketing System允许使用支持工单来解决您在使用Adob
 
 <span class="wysiwyg-underline">如何检查您的付款状态</span>：
 
-1. 登录 [magento.com](https://support.magento.com/).
-1. 单击 **记帐历史记录** 左边。
+1. 登录到 [magento.com](https://support.magento.com/).
+1. 单击 **账单历史记录** 左边的。
 1. 如果您 **do** 有一张发票 **待处理付款** 状态， **请联系您的Adobe客户团队** 解决付款问题。
 
 我们仅向Adobe Commerce许可证所有者和对具有Adobe Commerce许可证的帐户共享访问权限的帐户提供支持。 如果您需要Magento Open Source版本支持，请利用这些自助技术资源：
@@ -214,7 +214,7 @@ Adobe Commerce Ticketing System允许使用支持工单来解决您在使用Adob
 
 1. 使用共享帐户登录到帮助中心。
 1. 单击 **提交票证** 链接。 此时将打开票证提交表单。
-1. 展开 **组织** 下拉字段以选择贸易商。
+1. 展开 **组织** 用于选择商家的下拉字段。
 
 <span class="wysiwyg-underline">预期结果</span>：
 
@@ -226,11 +226,15 @@ Adobe Commerce Ticketing System允许使用支持工单来解决您在使用Adob
 
 #### 解决方案
 
-从商家获得共享访问权限后，您需要执行以下步骤（只需一次）：
+在获得商家的共享访问权限后，您需要采取以下步骤（仅一次）：
 
-1. 登录 [magento.com网站上的Magento帐户](https://account.magento.com/).
+1. 登录到 [magento.com网站上的Magento帐户](https://account.magento.com/).
 1. 在 **切换帐户** 从右上角的下拉字段中，选择共享访问帐户。
-1. 单击 **支持** 选项卡。 这样做将确保通过从Magento.com向Adobe Commerce帮助中心发出的SSO调用，正确配置Adobe Commerce帮助中心。
+1. 单击 **支持** 选项卡。 这样做将确保通过Magento.com对Adobe Commerce帮助中心的SSO调用正确配置Adobe Commerce帮助中心。
+
+如果您已经完成此操作，请检查您是否已被授予 *来自多个商家的共享访问权限* 通过单击 [[!UICONTROL Shared with me] 选项卡](https://account.magento.com/grantor/manage/shared/)：
+* 如果只有一个 [!UICONTROL Share Name] 列在名单上，也就是你只被一个商人授予了， *您不会看到 [!UICONTROL Organization] 下拉面板*.
+* 如果有多个 [!UICONTROL Share Names]，商户的支持权利可能已过期，因为其许可证先前因付款问题而被吊销。
 
 ### 跟踪您的票证 {#track-tickets}
 
@@ -327,9 +331,9 @@ URL必须以“https://”开头。 其格式通常为：商家名称+&quot;.mco
 
 选择您正在使用的Adobe Commerce产品的类型：
 
-* Adobe Commerce： **[!UICONTROL Implementation Type]** 字段将在您选择此选项后显示（请参阅下方了解详细信息）
+* Adobe Commerce： **[!UICONTROL Implementation Type]** 选择此选项后将显示字段（有关详细信息，请参阅下文）
 * Magento Order Management
-* Adobe Commerce报表：不包括 [高级报告](https://experienceleague.adobe.com/docs/commerce-admin/config/general/advanced-reporting.html)
+* Adobe Commerce Reporting：不包括 [高级报告](https://experienceleague.adobe.com/docs/commerce-admin/config/general/advanced-reporting.html)
 * Adobe Commerce [支付服务](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/overview.html)
 * Adobe Commerce服务： [渠道管理器](https://experienceleague.adobe.com/docs/commerce-channels/channel-manager/guide-overview.html) 仅限
 
@@ -432,25 +436,25 @@ URL必须以“https://”开头。 其格式通常为：商家名称+&quot;.mco
 *推荐：* 假设您正在为知道这些步骤的人编写这些步骤 **无** 关于Adobe Commerce：
 
 * 提及每一步，即使这看似简单而明显
-* 不要指望读者知道你的意思
+* 不要相信读者知道你的意思的假设
 
-用简单的语言写作，有简短的句子。
+用简单的语言写，句子短。
 
 #### 主题
 
-包含问题的简短概述(例如， *所有页面均显示错误404* )。
+包括问题的简短概述(例如， *所有页面上的错误404* )。
 
 **建议的文章：** 输入搜索词时，会显示可能与问题相关的Adobe商务文档文章列表。 单击列表中的文章以将其打开。
 
 ![hc_subject-suggested-articles.png](assets/hc_subject-suggested-articles.png)
 
-*推荐：* 请仔细考虑建议的文章，它们可能包含您希望Adobe Commerce支持团队提供的解决方案。
+*建议：* 请仔细考虑建议的文章，这些文章可能包含您希望从Adobe Commerce支持团队收到的解决方案。
 
-#### 版本(Adobe Commerce内部部署，仅云基础架构和航运上的Adobe Commerce)
+#### 版本(Adobe Commerce（本地），仅限云基础架构和装运上的Adobe Commerce)
 
-请选择您正在请求帮助的Adobe Commerce版本。 顶部列出了所有受支持的Adobe Commerce版本。 不支持的版本在底部以括号列出。 如果您正在迁移，请选择最新版本以确保您的版本受支持。
+请选择您请求帮助的Adobe Commerce版本。 所有受支持的Adobe Commerce版本都列在顶部。 底部列出了不受支持的版本，并带有圆括号。 如果您正在迁移，请选择最新版本以确保您受支持。
 
-要查找Adobe Commerce（云基础架构）的版本，请向下滚动 [云控制台](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/project/overview.html) 并检查窗口的中下方。
+要查找Adobe Commerce（云基础架构）的版本，请向下滚动 [Cloud控制台](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/project/overview.html) 页面，并检查窗口的中下方。
 
 ![联系人原因设置为Adobe Commerce Cloud应用程序而Adobe Commerce应用程序联系人原因设置为Live Search](assets/magento-env-id.png)
 
@@ -544,10 +548,10 @@ Adobe Commerce支持已为您问题提供了解决方案，并且您同意该解
 1. 登录您的Magento帐户，网址为 [https://account.magento.com](https://account.magento.com/).
 1. 在左侧面板的“共享访问”下，选择 **管理权限。**
 1. 找到要撤销其共享访问权限的用户，然后单击 **编辑** 在用户行中(**操作** 列)。
-1. 单击 **删除此用户** 在页面底部。
-1. 在确认弹出窗口中，单击 **删除用户** 以撤销访问权限，或者将X置于顶角以取消撤销。
+1. 点击 **删除此用户** （位于页面底部）。
+1. 在确认弹出窗口中，单击 **删除用户** 要撤销访问权限，或要取消撤销访问权限，请单击顶角的X。
 
-### 如何删除通过Cloud项目被授予共享访问权限的用户？ {#remove-cloud-shared-access-users}
+### 如何删除通过云项目获得共享访问权限的用户？ {#remove-cloud-shared-access-users}
 
 <u>受影响的产品和版本</u>
 
