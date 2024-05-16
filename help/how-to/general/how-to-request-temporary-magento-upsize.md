@@ -3,9 +3,9 @@ title: 如何请求云基础架构扩展中的临时Adobe Commerce
 description: 如果贵组织正在计划一个在线活动，而您预期该活动将出现高流量，或者您突然发现您的网站正在进行高流量活动，则可以提交[支持工单](/help/help-center-guide/help-center/magento-help-center-user-guide.md#submit-ticket)以请求为云基础架构商店上的Adobe Commerce临时添加云容量。
 exl-id: 561e2bdd-718a-45c1-8b6c-a0e3a6c8ad04
 feature: Cloud, Iaas
-source-git-commit: a445bae7f013b29cb83fc96eb26dcbfd186a4de7
+source-git-commit: 357e0acb1c849079ff0fe9f53fe386f60475c7f9
 workflow-type: tm+mt
-source-wordcount: '900'
+source-wordcount: '898'
 ht-degree: 0%
 
 ---
@@ -73,7 +73,7 @@ Adobe为Adobe Commerce on cloud infrastructure提供一套New Relic警报策略�
 
 ## 查看您的升级历史记录
 
-您可以在中查看请求调整大小的历史记录 [项目门户（载入UI）](/docs/commerce-cloud-service/start/onboarding.html#cloud-project-portal-(onboarding-ui))，下 **项目** > **服务** > **CPU使用情况跟踪**.
+您可以查看请求调整大小的历史记录，方法是向 **CSM（客户成功经理）**.
 以下信息适用于每个调整大小请求：
 
 * **调整开始日期的大小**：升级请求的日期。

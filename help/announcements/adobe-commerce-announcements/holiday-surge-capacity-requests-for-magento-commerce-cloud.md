@@ -4,9 +4,9 @@ description: 在假日销售旺季（大约11月中旬至1月中旬），Adobe�
 exl-id: 9d6910bf-30bc-4117-bf7f-a0316f9506b5
 feature: Cloud, Paas
 role: Admin
-source-git-commit: dfd3f788f42677b631ffb5b3153a1c79c2cc1ca3
+source-git-commit: 357e0acb1c849079ff0fe9f53fe386f60475c7f9
 workflow-type: tm+mt
-source-wordcount: '449'
+source-wordcount: '446'
 ht-degree: 0%
 
 ---
@@ -23,7 +23,7 @@ ht-degree: 0%
 
 **查看您的升级历史记录**
 
-您可以在中查看请求调整大小的历史记录 [项目门户（载入UI）](https://devdocs.magento.com/cloud/onboarding/onboarding-tasks.html)，下 **项目** > **服务** > **CPU使用情况跟踪**.
+您可以查看请求调整大小的历史记录，方法是向 **CSM（客户成功经理）**.
 以下信息适用于每个调整大小请求：
 
 * **调整开始日期的大小**：升级请求的日期。
