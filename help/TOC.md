@@ -2,9 +2,9 @@
 user-guide-title: Adobe Commerce 知识库
 user-guide-description: 排除 Commerce 商店故障以及对其进行维护所需的一切。
 breadcrumb-title: Commerce KB
-source-git-commit: 5fb41bb335b03804f38b3bd95d699f0026ca8970
+source-git-commit: 45ab0d3a858239dc8a35ed81c3b0d2f7cda5c85b
 workflow-type: tm+mt
-source-wordcount: '11021'
+source-wordcount: '11031'
 ht-degree: 0%
 
 ---
@@ -1255,6 +1255,7 @@ ht-degree: 0%
    * [如何删除Magento Order Management](/help/how-to/general/how-to-remove-mom.md)
    * [Commerce假日准备工作的技术提示](/help/how-to/general/tech-tips-for-commerce-holiday-readiness.md)
    * [如何为GraphQL请求绕过WAF](/help/how-to/general/how-to-bypass-waf-for-graphql-requests.md)
+   * [将适用于Adobe Commerce on cloud的MariaDB 10.4升级到10.5](/help/how-to/general/upgrade-mariadb-10-4-to-10-5-for-magento-commerce-cloud.md)
 * 常见问题解答 {#faq}
    * [常见问题解答概述](/help/faq/overview.md)
    * [Fastly支持的Web应用程序防火墙(WAF)：常见问题解答](/help/faq/general/web-application-firewall-waf-powered-by-fastly-the-faq.md)
