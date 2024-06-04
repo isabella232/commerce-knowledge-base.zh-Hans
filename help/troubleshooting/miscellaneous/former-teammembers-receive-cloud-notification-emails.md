@@ -4,16 +4,18 @@ description: 本文为Adobe Commerce提供了一个关于向前团队成员发�
 exl-id: b2535f66-8aec-4ddf-9a69-60879a0a1939
 feature: Cloud, Communications, Paas
 role: Developer
-source-git-commit: 075f295c5b600fcca9fbecc5aad20b0640d900f9
+source-git-commit: 0017d43e221ef3023630f714c34aa65b368e214f
 workflow-type: tm+mt
-source-wordcount: '227'
+source-wordcount: '244'
 ht-degree: 0%
 
 ---
 
 # 以前的团队成员会收到Adobe Commerce Cloud通知电子邮件
 
-本文提供了一个解决方案，使不再与项目关联的团队成员可以继续接收通知。
+本文提供了一个解决方案，用于从通知电子邮件的收件人列表中删除满足以下条件的用户：
+* 不再与您的项目关联的前团队成员。
+* 不应接收通知的当前团队成员。
 
 ## 问题
 
