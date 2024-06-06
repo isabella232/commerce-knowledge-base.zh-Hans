@@ -3,7 +3,7 @@ title: 回滚没有云快照的环境
 description: 本文显示了两种解决方案，它们可以在云基础架构上回滚环境，而无需拍摄您的Adobe Commerce环境快照。
 exl-id: 834d13a7-3b1a-460c-9ed0-9d560105f436
 feature: Build, Cloud, Console
-source-git-commit: f3c976bd44dbc47bd5cc8076f1679d56910cfaf3
+source-git-commit: 5347e8714ef1374440f5d246100a0221e4b189fc
 workflow-type: tm+mt
 source-wordcount: '800'
 ht-degree: 0%
@@ -44,13 +44,13 @@ ht-degree: 0%
 
 我们需要禁用配置管理，以便它不会在部署期间自动应用以前的配置设置。
 
-要禁用配置管理，请确保 `/app/etc/` 目录不包含 `config.php` (适用于Adobe Commerce 2.2.x)或 `config.local.php` (适用于Adobe Commerce 2.1.x)文件。
+要禁用配置管理，请确保 `/app/etc/` 目录不包含 `config.php` (适用于Adobe Commerce 2.4.x)或 `config.local.php` (适用于Adobe Commerce 2.1.x)文件。
 
 要删除配置文件，请执行以下步骤：
 
 1. [通过SSH连接到环境](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/secure-connections.html).
 1. 删除配置文件：
-   * 对于Adobe Commerce 2.2：
+   * 对于Adobe Commerce 2.4：
 
    ```php
     rm app/etc/config.php
