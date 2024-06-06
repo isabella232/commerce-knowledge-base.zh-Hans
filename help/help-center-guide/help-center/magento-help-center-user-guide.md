@@ -3,9 +3,9 @@ title: Adobe Commerce帮助中心用户指南
 description: 了解如何将支持工单提交到Adobe Commerce帮助中心，提供对帐户的共享访问权限，以及导航Adobe Commerce知识库。
 exl-id: 9eb4814f-c9c4-4dd0-b68a-87d712898aa5
 feature: Support, Roles/Permissions, Tools and External Services, Admin Workspace, Iaas, Marketing Tools
-source-git-commit: 86810427e8f902dc184b377257c8e86dd28f38f6
+source-git-commit: 751a315303be3d6435f4064cdd3fb28a0c811155
 workflow-type: tm+mt
-source-wordcount: '3992'
+source-wordcount: '3986'
 ht-degree: 0%
 
 ---
@@ -97,7 +97,16 @@ Adobe Commerce Ticketing System允许使用支持工单来解决您在使用Adob
 1. 填写字段。
 1. 单击 **提交**.
 
-您 **必须登录** 使用您的Magento帐户转到帮助中心，以提交支持服务单。 在您登录之前， [该 **提交票证** 按钮将不显示](#no-submit-link).
+您 *必须具有* https://account.adobe.com和https://account.magento.com上的帐户，然后使用您的Adobe Commerce帐户登录到帮助中心以提交支持票证。 在您登录之前， [该 **提交票证** 按钮将不显示](#no-submit-link).
+
+>[!NOTE]
+>
+>如果您已在https://account.magento.com上拥有帐户，但无法登录，则可能尚未在https://account.adobe.com上注册帐户（自2022年8月起，必须注册）。
+>
+>要解决此问题：
+>1. 在https://account.adobe.com上使用与您的广告ID相同的电子邮件地址创建一个帐户。
+>1. 转到https://account.magento.com ，将您的Adobe ID与MAG ID关联起来。
+
 
 #### “Magento帐户”页 {#submit-ticket-magento-account-page}
 
@@ -182,7 +191,7 @@ Adobe Commerce Ticketing System允许使用支持工单来解决您在使用Adob
 
 >[!NOTE]
 >
->如果能够提交票证，但在访问云项目时遇到问题，请不要发送电子邮件。 请通过常规渠道提交此问题的票证。
+>如果您在访问云项目时遇到问题，请通过常规渠道提交此问题的票证。 如果能够提交票证，请勿发送电子邮件。
 
 ### “Magento帐户”页面上的“请验证您的电子邮件地址”错误 {#verify-email-address}
 
@@ -192,13 +201,8 @@ Adobe Commerce Ticketing System允许使用支持工单来解决您在使用Adob
 
 解决方案是验证您的电子邮件地址：
 
-1. 单击 **验证电子邮件** 按钮（位于上的电子邮件字段下方） [编辑帐户信息](https://account.magento.com/customer/account/edit/) 页面，类似于下面的页面。
-
-   ![Validate_Email_Solution](assets/Validate_Email_Solution.png){width="800"}
-
-1. 单击 **验证电子邮件** 按钮将向此Magento帐户注册的电子邮件地址发送电子邮件，其中包含验证电子邮件地址的链接。
-1. 单击电子邮件验证链接以验证您的电子邮件并解决此问题。
-1. 如果您没有收到包含电子邮件验证链接的电子邮件，请发送电子邮件至 [帮助中心登录问题](mailto:grp-magento-helpcenterloginissues@adobe.com) 并指示无法验证您的电子邮件地址。
+1. 登录到https://account.adobe.com ，并根据需要请求密码。
+1. 验证您的Adobe帐户。
 
 >[!NOTE]
 >
