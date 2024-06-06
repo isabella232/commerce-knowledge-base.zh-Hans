@@ -4,9 +4,9 @@ description: 本文为磁盘空间不足并需要安全删除文件的情况提�
 exl-id: 6b0a5c1a-8db4-49d7-a785-b4e0bbaea0df
 feature: Cloud, Paas
 role: Developer
-source-git-commit: 6af353bb379ee88248342a7cb514dd9d36d47a92
+source-git-commit: 86515936f72bbd0a5778cb81f665993ed91e4707
 workflow-type: tm+mt
-source-wordcount: '335'
+source-wordcount: '333'
 ht-degree: 0%
 
 ---
@@ -15,7 +15,7 @@ ht-degree: 0%
 
 ## 受影响的产品和版本
 
-* 云基础架构上的Adobe Commerce：2.3.0-2.3.7、2.4.0-2.4.2-p1
+* 云基础架构上的Adobe Commerce 2.4.2 - 2.4.7
 * 这特定于专用的Pro群集。 入门和集成环境是单节点，没有 `/data/exports` 目录。
 
 ## 磁盘空间不足的迹象
