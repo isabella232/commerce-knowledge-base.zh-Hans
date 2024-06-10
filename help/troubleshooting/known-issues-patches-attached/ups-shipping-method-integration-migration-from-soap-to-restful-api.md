@@ -5,14 +5,18 @@ description: 应用修补程序以处理 [!DNL UPS] 装运方法集成迁移自 
 feature: Shipping/Delivery
 role: Developer
 exl-id: 8ab5d4a8-0155-4b2c-ab67-d0bd2f949a07
-source-git-commit: 7785a37e033bc2bea5b6a1509c337289e7b871cb
+source-git-commit: 6694bb1e041e6285f5bd5a05a1c37b7062521f52
 workflow-type: tm+mt
-source-wordcount: '487'
+source-wordcount: '640'
 ht-degree: 0%
 
 ---
 
 # [!DNL UPS] 装运方法集成迁移自 [!DNL SOAP] 到 [!DNL RESTful API]
+
+>[!NOTE]
+>
+>如果您在上传本文中的三个修补程序中的任何一个 **2024年6月6日**：如果您之所以遇到此问题，是因为 [!DNL Metric System/SI] 没有使用的测量值（千克及厘米），您应该再次为您的2.4.4+/2.4.5+/2.4.6+版本的Adobe Commerce/Magento Open Source重新应用本文中发布的这些更新的新修补程序之一，因为否则，您将无法选择 [!DNL Metric System/SI] 测量 **千克** 和 **厘米** 在 [!DNL UPS] 中的配送方式 **[!DNL Admin configuration]**. 这些新修补程序与以前发布的修补程序兼容。 此问题将在即将发布的Adobe Commerce版本2.4.7-p1计划发布的范围内永久修复 **2024年6月11日**.
 
 >[!NOTE]
 >
@@ -43,6 +47,8 @@ ht-degree: 0%
 
 此 [!DNL UPS] 已发布 [安全更新 [!DNL API]](https://developer.ups.com/oauth-developer-guide?loc=en_US&amp;sp_rid=NTA5MzQ1OTE2NjEyS0&amp;sp_mid=72989914).
 
+如果您将欧盟（其他来源可能遇到相同问题）作为发运来源地，则会导致 [!DNL UPS REST] 请求： ”*装运不能以KGS/IN、LBS/CM或OZS/CM作为度量单位。*&quot;
+
 ## 解决方案
 
 根据您的Adobe Commerce/Magento Open Source版本，使用以下附加的修补程序：
@@ -55,15 +61,15 @@ ht-degree: 0%
 
 ### 对于版本2.4.4、2.4.4-pX：
 
-* [AC-9363_UPS_Shipping_Method_Migration_REST_API_2.4.4x_COMPOSER.patch.zip](assets/AC-9646_UPS_Shipping_Method_Migration_REST_API_2.4.4x_COMPOSER.patch.zip)
+* [AC-11984_UPS_Shipping_Method_Migration_REST_API_2.4.4x_COMPOSER.patch.zip](assets/AC-11984_UPS_Shipping_Method_Migration_REST_API_2.4.4x_COMPOSER.patch.zip)
 
 ### 对于版本2.4.5、2.4.5-pX：
 
-* [AC-9358_UPS_Shipping_Method_Migration_REST_API_2.4.5x_COMPOSER.patch.zip](assets/AC-9647_UPS_Shipping_Method_Migration_REST_API_2.4.5x_COMPOSER.patch.zip)
+* [AC-11983_UPS_Shipping_Method_Migration_REST_API_2.4.5x_COMPOSER.patch.zip](assets/AC-11983_UPS_Shipping_Method_Migration_REST_API_2.4.5x_COMPOSER.patch.zip)
 
 ### 对于版本2.4.6、2.4.6-pX：
 
-* [AC-9345_UPS_Shipping_Method_Migration_REST_API_2.4.6x_COMPOSER.patch.zip](assets/AC-9648_UPS_Shipping_Method_Migration_REST_API_2.4.6x_COMPOSER.patch.zip)
+* [AC-11916_UPS_Shipping_Method_Migration_REST_API_2.4.6x_COMPOSER.patch.zip](assets/AC-11916_UPS_Shipping_Method_Migration_REST_API_2.4.6x_COMPOSER.patch.zip)
 
 ## 如何应用修补程序
 
