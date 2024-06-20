@@ -1,19 +1,19 @@
 ---
 title: “ACSD-52041：页面生成器渲染不会释放锁定”
-description: 应用ACSD-52041修补程序以修复Adobe Commerce问题，该问题导致页面生成器呈现5秒并且不释放锁定。
+description: 应用ACSD-52041修补程序以修复Adobe Commerce问题，该问题导致页面生成器呈现五秒钟，并且不释放锁定。
 feature: Page Builder
 role: Admin, Developer
 exl-id: f2a1fd36-2098-46a7-aa42-3a5a0014adc9
-source-git-commit: 7718a835e343ae7da9ff79f690503b4ee1d140fc
+source-git-commit: fc5dc9fcf610cae6f8c0a334b4ef15029c462c66
 workflow-type: tm+mt
-source-wordcount: '333'
+source-wordcount: '339'
 ht-degree: 0%
 
 ---
 
 # ACSD-52041：页面生成器渲染不会释放锁定
 
-ACSD-52041修补程序修复了Page Builder呈现5秒且未释放锁的问题。 此修补程序在以下情况下可用： [!DNL Quality Patches Tool (QPT)] 已安装1.1.35。 修补程序ID为ACSD-52041。 请注意，该问题计划在Adobe Commerce 2.4.7中修复。
+ACSD-52041修补程序修复了页面生成器呈现5秒钟而不释放锁的问题。 此修补程序在以下情况下可用： [!DNL Quality Patches Tool (QPT)] 已安装1.1.48。 修补程序ID为ACSD-52041-v2。 请注意，该问题计划在Adobe Commerce 2.4.7中修复。
 
 ## 受影响的产品和版本
 
@@ -23,7 +23,7 @@ ACSD-52041修补程序修复了Page Builder呈现5秒且未释放锁的问题。
 
 **与Adobe Commerce版本兼容：**
 
-* Adobe Commerce（所有部署方法） 2.4.4 - 2.4.6-p1
+* Adobe Commerce（所有部署方法） 2.4.4 - 2.4.4-p8、2.4.5 - 2.4.5-p7、2.4.6 - 2.4.6-p6
 
 >[!NOTE]
 >
@@ -31,7 +31,7 @@ ACSD-52041修补程序修复了Page Builder呈现5秒且未释放锁的问题。
 
 ## 问题
 
-页面生成器渲染5秒钟，而不释放锁定。
+页面生成器呈现5秒钟，并且不释放锁定。
 
 <u>重现问题的步骤</u>：
 
