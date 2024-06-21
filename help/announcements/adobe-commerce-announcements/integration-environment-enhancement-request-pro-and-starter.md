@@ -4,9 +4,9 @@ description: 如果您是Adobe Commerce on cloud infrastructure Pro计划架构�
 exl-id: c49b049b-efb8-412f-b27d-a89f8a758d85
 feature: Integration
 role: Admin
-source-git-commit: 43be85de953909253900d60488f76a20bac91793
+source-git-commit: fb26b71316e04de31fa6a895b87230bed5c1ca6a
 workflow-type: tm+mt
-source-wordcount: '568'
+source-wordcount: '645'
 ht-degree: 0%
 
 ---
@@ -14,6 +14,12 @@ ht-degree: 0%
 # 集成环境增强请求 — Pro和Starter
 
 如果您是Adobe Commerce on cloud infrastructure Pro计划架构客户，并且当前使用标准大小的集成环境，或者您是Adobe Commerce on cloud infrastructure入门计划架构客户，并且当前使用标准大小的暂存环境并希望获得更多动力，您可以请求升级到增强型集成环境，该环境可提供大约四倍的性能。 本文将Pro客户和Starter客户的说明分开。
+
+>[!NOTE]
+>
+> 升级到增强型集成可能无法解决所有性能问题，因为它将取决于安装的总资源要求，包括第三方集成或自定义。
+>
+> 您还需要确保遵循最佳实践，以在集成环境中获得最佳性能，即使这也可能不是最终解决方案。 有关指导，请参阅以下文档： [专业体系结构](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/architecture/pro-architecture#integration-environment) 和 [入门级架构](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/architecture/starter-architecture#staging-environment) 《Commerce on Cloud Infrastructure指南》中的。
 
 ## Pro
 
