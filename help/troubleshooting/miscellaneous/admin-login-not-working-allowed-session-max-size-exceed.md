@@ -2,9 +2,9 @@
 title: ’[!DNL Admin] 登录不起作用 — 超出允许的会话最大大小'
 description: 解决您尝试登录 [!DNL Admin] 面板和表单会刷新并且您无法登录。
 exl-id: 12789df0-6130-4e60-a92a-68ed329bd7fd
-source-git-commit: 7718a835e343ae7da9ff79f690503b4ee1d140fc
+source-git-commit: 8718148f6d9a40c9a71484a7fbc818a626e825e1
 workflow-type: tm+mt
-source-wordcount: '315'
+source-wordcount: '318'
 ht-degree: 0%
 
 ---
@@ -53,6 +53,6 @@ bin/magento config:set system/security/max_session_size_admin 500000
 
 ## 相关阅读
 
-* [会话大小](/docs/commerce-admin/systems/security/security-session-management.html?lang=en#admin-sessions) 在“Admin Systems Guide（管理系统指南）”中。
-* [操作模式](/docs/commerce-operations/configuration-guide/cli/set-mode.html) ，位于配置指南中。
-* [安全连接](/docs/commerce-cloud-service/user-guide/develop/secure-connections.html) 《Commerce on Cloud Infrastructure指南》中的。
+* [会话大小](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/security/security-session-management#admin-sessions) 在“Admin Systems Guide（管理系统指南）”中。
+* [操作模式](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/cli/set-mode) ，位于配置指南中。
+* [安全连接](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/secure-connections) 《Commerce on Cloud Infrastructure指南》中的。
