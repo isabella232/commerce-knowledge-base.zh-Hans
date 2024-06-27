@@ -2,9 +2,9 @@
 user-guide-title: Adobe Commerce 知识库
 user-guide-description: 排除 Commerce 商店故障以及对其进行维护所需的一切。
 breadcrumb-title: Commerce KB
-source-git-commit: 449e37e140e7df13be8d59a61a33c6298cb65f53
+source-git-commit: 366e27875cd3a764d99d62997336c11adafcb623
 workflow-type: tm+mt
-source-wordcount: '11040'
+source-wordcount: '11052'
 ht-degree: 0%
 
 ---
@@ -1062,11 +1062,11 @@ ht-degree: 0%
       * [运行安装程序:static-content:部署deployed_version.txt问题](/help/troubleshooting/miscellaneous/run-setup-static-content-deploy-deployed-version-txt-issue.md)
       * [重定向回Commerce管理员登录表单，其中显示“您的帐户暂时被禁用”错误](/help/troubleshooting/miscellaneous/redirect-back-to-the-admin-login-form-with-your-account-is-temporarily-disabled-error.md)
       * [部署后禁用Google Analytics](/help/troubleshooting/miscellaneous/google-analytics-gets-disabled-after-deployment.md)
-      * [Adobe Commerce Intelligence帐户锁定故障诊断](/help/troubleshooting/miscellaneous/troubleshooting-mbi-account-lockout.md)
+      * [Adobe Commerce Intelligence帐户锁定疑难解答](/help/troubleshooting/miscellaneous/troubleshooting-mbi-account-lockout.md)
       * [影响xdebug安装的已知问题](/help/troubleshooting/miscellaneous/known-issues-that-affect-installation.md)
       * [无法登录Adobe Commerce支持或云帐户](/help/troubleshooting/miscellaneous/unable-to-log-in-to-support-or-cloud-project.md)
       * [冲突的组件依赖关系](/help/troubleshooting/miscellaneous/conflicting-component-dependencies.md)
-      * [Adobe Commerce Intelligence Service策略](/help/troubleshooting/miscellaneous/mbi-service-policies.md)
+      * [Adobe Commerce Intelligence服务策略](/help/troubleshooting/miscellaneous/mbi-service-policies.md)
       * [从Git推送时处于生产状态的新环境](/help/troubleshooting/miscellaneous/when-pushed-from-git-environments-placed-under-production-on-magento-cloud.md)
       * [登录到Commerce管理员后出错](/help/troubleshooting/miscellaneous/error-after-logging-in-to-the-magento-admin.md)
       * [Adobe Commerce的Magento Order Management系统(OMS)超时](/help/troubleshooting/miscellaneous/mom-times-out-when-trying-to-connect-to-a-local-environment.md)
@@ -1085,7 +1085,7 @@ ht-degree: 0%
       * [Cron由于配置错误或丢失而停止 [!DNL OpCache settings]](/help/troubleshooting/miscellaneous/crons-blocked-running-missing-opache-settings.md)
       * [无法删除该文件。 警告！ unlink：没有此类文件或目录错误* [!DNL Admin]](/help/troubleshooting/miscellaneous/file-cannot-be-deleated-no-file-or-directory.md)
       * [[!DNL Admin] 登录不起作用 — 超出了允许的会话最大大小](/help/troubleshooting/miscellaneous/admin-login-not-working-allowed-session-max-size-exceed.md)
-      * [为现有Adobe Commerce入门项目配置Cloud Intelligence连接](/help/troubleshooting/miscellaneous/configure-mbi-connection-for-cloud-starter-projects.md)
+      * [为现有Adobe Commerce Intelligence入门项目配置云连接](/help/troubleshooting/miscellaneous/configure-mbi-connection-for-cloud-starter-projects.md)
       * [[!DNL Google Tag Manager] 被实时搜索构件破坏](/help/troubleshooting/miscellaneous/google-tag-manager-broken-by-live-search-widget.md)
       * [第三方安全扫描发现的漏洞应转到 [!DNL HackerOne]](/help/troubleshooting/miscellaneous/third-party-test-reports-are-handled-by-hackerone.md)
       * [从2.4.2升级到2.4.5-p3后获取数千个搜索结果](/help/troubleshooting/miscellaneous/getting-thousands-of-search-results-after-upgrading-to-2-4-5-p3.md)
@@ -1113,6 +1113,7 @@ ht-degree: 0%
       * [部署失败：“cache”命名空间错误中未定义命令](/help/troubleshooting/deployment/deployment-failed-there-are-no-commands-defined-in-the-cache-namespace-error.md)
       * [在env：COMPOSER_AUTH或auth.json中，部署失败并显示正确的访问密钥](/help/troubleshooting/deployment/deployment-failed-with-correct-access-key-env-composer-auth.md)
    * 已知问题 {#known-issues-patches-attached}
+      * [可用于Adobe Commerce的安全更新 —  [!DNL APSB24-40] 已修订为包括隔离的修补程序 [!DNL CVE-2024-34102]](/help/troubleshooting/known-issues-patches-attached/security-update-available-for-adobe-commerce-apsb24-40-revised-to-include-isolated-patch-for-cve-2024-34102.md)
       * [[!DNL UPS] 装运方法集成迁移自 [!DNL SOAP] 到 [!DNL RESTful API]](/help/troubleshooting/known-issues-patches-attached/ups-shipping-method-integration-migration-from-soap-to-restful-api.md)
       * [[!DNL USPS] Ground Advantage配送方式支持AC-9182的修补程序](/help/troubleshooting/known-issues-patches-attached/usps-ground-advantage-shipping-method-support-hotfix-for-ac-9182.md)
       * [Adobe Commerce 2.4.3-p2 — 适用于CVE-2022-35698的2.4.5安全修补程序](/help/troubleshooting/known-issues-patches-attached/adobe-commerce-2-4-3-p2-2-4-5-security-hotfix-for-cve-2022-35698.md)
@@ -1187,7 +1188,7 @@ ht-degree: 0%
    * [如何获取和应用安全修补程序](/help/how-to/general/how-to-obtain-and-apply-security-patches.md)
    * [设置新项目的核对清单 [!DNL domain]](/help/how-to/general/checklist-for-setting-up-a-new-domain.md)
    * [从暂存或生产环境恢复数据库快照](/help/how-to/general/restore-a-db-snapshot-from-staging-or-production.md)
-   * [Adobe Commerce Intelligence Essentials：更新付款方法或取消订阅](/help/how-to/general/mbi-essentials-update-payment-method-or-cancel-subscription.md)
+   * [Adobe Commerce Intelligence Essentials：更新支付方式或取消订阅](/help/how-to/general/mbi-essentials-update-payment-method-or-cancel-subscription.md)
    * [AdobeCommerce Intelligence培训视频： SQLReport Builder](/help/how-to/general/mbi-training-video-sql-report-builder.md)
    * [为图像和其他静态内容设置缓存TTL](/help/how-to/general/set-cache-ttl-for-images-and-other-static-content.md)
    * [仅为首次购买提供折扣（无优惠券）](/help/how-to/general/provide-discount-for-first-purchase-only-no-coupons.md)
@@ -1216,7 +1217,7 @@ ht-degree: 0%
    * [在云上的Adobe Commerce中为MySQL分配更多空间](/help/how-to/general/allocate-more-space-for-mysql-in-magento-commerce-cloud.md)
    * [更改数据库实体（订单、发票、贷项通知单等）的增量ID 在特定存储上](/help/how-to/general/change-increment-id-for-a-db-entity-order-invoice-credit-memo-etc-on-particular-store.md)
    * [为云上的入门计划设置Fastly](/help/how-to/general/set-up-fastly-for-starter-plan-on-cloud.md)
-   * [Adobe Commerce智能培训视频：同类群组Report Builder](/help/how-to/general/mbi-training-video-cohort-report-builder.md)
+   * [Adobe Commerce Intelligence培训视频：同类群组Report Builder](/help/how-to/general/mbi-training-video-cohort-report-builder.md)
    * [将适用于Adobe Commerce on cloud的MariaDB 10.0升级到10.2](/help/how-to/general/upgrade-mariadb-10-0-to-10-2-for-magento-commerce-cloud.md)
    * [在云基础架构上重置Adobe Commerce上的环境](/help/how-to/general/reset-environment-on-cloud.md)
    * [MBI：重新验证集成](/help/how-to/general/mbi-reauthenticating-integrations.md)
@@ -1238,7 +1239,7 @@ ht-degree: 0%
    * [MBI：创建和编辑高级计算列](/help/how-to/general/mbi-creating-and-editing-advanced-calculated-columns.md)
    * [检查云基础架构上Adobe Commerce的磁盘空间限制](/help/how-to/general/check-disk-space-limit-for-magento-commerce-cloud.md)
    * [云基础架构上Adobe Commerce的SSL (TLS)证书](/help/how-to/general/ssl-tls-certificates-for-magento-commerce-cloud-faq.md)
-   * [无法访问最新的测试版](/help/how-to/general/cannot-access-the-latest-beta-version.md)
+   * [无法访问最新的Beta版本](/help/how-to/general/cannot-access-the-latest-beta-version.md)
    * [切换应用程序模式](/help/how-to/general/switch-the-magento-mode.md)
    * [如何登录Adobe Commerce在云基础架构上提供的Fastly帐户](/help/how-to/general/accessing-the-fastly-account-provided-with-adobe-commerce-for-cloud.md)
    * [显示Adobe Commerce错误报告编号而不是Fastly 503错误](/help/how-to/general/display-magento-error-report-number-instead-of-fastly-503-error-on-cloud.md)
