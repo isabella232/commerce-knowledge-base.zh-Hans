@@ -3,7 +3,7 @@ title: 修订的Google修补程序所有Adobe Commerce版本上的访问丢失
 description: “本文为最近不兼容的Adobe Commerce商家提供了修补程序 [!DNL Google Maps] 版本3.54+.'
 feature: Install, Upgrade
 role: Developer
-source-git-commit: 575fce2f678321ff184779895d43be90828c2ce4
+source-git-commit: 98581cc9c251976339406f80764715096321126b
 workflow-type: tm+mt
 source-wordcount: '313'
 ht-degree: 0%
@@ -23,13 +23,13 @@ ht-degree: 0%
 
 开启 *2024年6月14日* [!DNL Google Maps] 版本 *3.53* 到了生命尽头，却被关闭了 [!DNL Google].
 
-[有关详细信息，请参阅([!DNL Google Maps Platform: Maps JavaScript API])] (https://developers.google.com/maps/documentation/javascript/versions#documentation-for-the-api-versions)。
+有关详细信息，请参阅 [[!DNL Google Maps Platform: Maps JavaScript API]](https://developers.google.com/maps/documentation/javascript/versions#documentation-for-the-api-versions).
 
 Adobe Commerce与任何最近使用的 [!DNL  Google Maps] 版本3.54+。
 
 不兼容是由旧版导致的 `prototype.js script`，通过加载 `lib/web/legacy-build.min.js` 覆盖本机Array.from函数，这会导致与 [!DNL  Google Maps] API。
 
-[请参阅([!DNL Google Maps: JS Best Practices])] (https://developers.google.com/maps/documentation/javascript/best-practices)。
+请参阅 [[!DNL Google Maps: JS Best Practices]](https://developers.google.com/maps/documentation/javascript/best-practices).
 
 <u>重现问题的步骤</u> ：
 
