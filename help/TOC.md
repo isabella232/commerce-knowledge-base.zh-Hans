@@ -2,9 +2,9 @@
 user-guide-title: Adobe Commerce 知识库
 user-guide-description: 排除 Commerce 商店故障以及对其进行维护所需的一切。
 breadcrumb-title: Commerce KB
-source-git-commit: 366e27875cd3a764d99d62997336c11adafcb623
+source-git-commit: c8e688b59f0d66dc32da098c185d81b14c6770bc
 workflow-type: tm+mt
-source-wordcount: '11052'
+source-wordcount: '11064'
 ht-degree: 0%
 
 ---
@@ -912,6 +912,7 @@ ht-degree: 0%
       * [Adobe Commerce站点故障排查器](/help/troubleshooting/site-down-or-unresponsive/magento-site-down-troubleshooter.md)
       * [应用修补程序将导致您的网站停机](/help/troubleshooting/site-down-or-unresponsive/applying-a-patch-takes-your-site-down.md)
       * [由于内容暂存问题，所有页面均显示错误404](/help/troubleshooting/site-down-or-unresponsive/error-404-on-all-pages-due-to-content-staging-issue.md)
+      * [修订的Google修补程序所有Adobe Commerce版本上的访问丢失](/help/troubleshooting/installation-and-upgrade/revised-patches-for-google-maps-access-loss-on-all-adobe-commerce-versions.md)
    * 其他 {#miscellaneous}
       * [如何检查原因 [!DNL cron] 已禁用](/help/troubleshooting/miscellaneous/how-to-check-why-cron-was-disabled.md)
       * [错误 [!DNL opensearch] 搜索引擎不存在。 回退到 [!DNL livesearch].](/help/troubleshooting/miscellaneous/error-opensearch-search-engine-doesnt-exist-falling-back-to-livesearch.md)
