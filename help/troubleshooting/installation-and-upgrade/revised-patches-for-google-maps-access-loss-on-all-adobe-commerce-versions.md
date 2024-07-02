@@ -3,7 +3,7 @@ title: 修订的Google修补程序所有Adobe Commerce版本上的访问丢失
 description: “本文为最近不兼容的Adobe Commerce商家提供了修补程序 [!DNL Google Maps] 版本3.54+.'
 feature: Install, Upgrade
 role: Developer
-source-git-commit: 98581cc9c251976339406f80764715096321126b
+source-git-commit: cf235c2fdd7a36d7e3b126de35c51e6711cd3845
 workflow-type: tm+mt
 source-wordcount: '313'
 ht-degree: 0%
@@ -47,7 +47,7 @@ Adobe Commerce与任何最近使用的 [!DNL  Google Maps] 版本3.54+。
 
 ## 解决方案
 
-* 任何2.4.4、2.4.5、2.4.6或2.2.7修补程序版本上的所有商户都应将这些相应的修补程序应用于其版本。
+* 任何2.4.4、2.4.5、2.4.6或2.4.7修补程序版本上的所有商户都应将这些相应的修补程序应用于其版本。
 
 ## Patch
 
