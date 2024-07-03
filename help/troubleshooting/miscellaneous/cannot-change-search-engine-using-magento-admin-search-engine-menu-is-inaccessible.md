@@ -4,9 +4,9 @@ description: 本文提供了一个解决方案，用于在“Adobe Commerce搜�
 exl-id: 5b0f728c-6a8d-446d-9553-5abc3d01e516
 feature: Admin Workspace, Search, Variables
 role: Developer
-source-git-commit: e9f009cf4e072dcd9784693c10a4c16746af3cc5
+source-git-commit: 0ea7bbef7fec556f9a90151be9cf1077f5cfac45
 workflow-type: tm+mt
-source-wordcount: '842'
+source-wordcount: '833'
 ht-degree: 0%
 
 ---
@@ -41,13 +41,14 @@ ht-degree: 0%
 
 ## 使用管理员更改搜索引擎（步骤）
 
-1. 以管理员身份登录到管理员。
-1. 在左侧的“管理员”侧边栏中，单击 **商店**. 然后，在下 **设置**，选择 **配置**.
-1. 在左侧的面板中，位于 **目录，** 选择 **目录**.
-1. 展开 **目录搜索** 部分。    ![catalog_menu.png](assets/catalog_menu.png)
-1. 转到 **搜索引擎** 字段，并从中移除选定内容 **使用系统值** 复选框。
-1. 单击 **搜索引擎** 菜单并选择其中一个可用选项。    ![search_engine_menu.png](assets/search_engine_menu.png)
-1. 单击 **保存配置** 页面右上角的。
+1. 登录到 **[!UICONTROL Admin]** 作为管理员。
+1. 在左侧 **[!UICONTROL Admin]** 侧栏，单击 **[!UICONTROL Stores]**.
+1. 下 **[!UICONTROL Settings]**，选择 **[!UICONTROL Configuration]**.
+1. 导航到左侧的面板，位于 **[!UICONTROL Catalog]，** 并选择 **[!UICONTROL Catalog]**.
+1. 展开 **[!UICONTROL Catalog Search]** 部分。    ![catalog_menu.png](assets/catalog_menu.png)
+1. 转到 **[!UICONTROL Search Engine]** 字段，并从中移除选定内容 **[!UICONTROL Use system value]** 复选框。
+1. 单击 **[!UICONTROL Search Engine]** 菜单，然后选择以下所示的可用选项之一。    ![search_engine_menu.png](assets/search_engine_menu.png)
+1. 单击 **[!UICONTROL Save Config]** 在页面的右上角。
 
 ## Adobe Commerce内部部署问题
 
@@ -65,10 +66,11 @@ ht-degree: 0%
 
 ### 解决方案：将存储视图设置为默认配置
 
-1. 以管理员身份登录到管理员。
-1. 在左侧的“管理员”侧边栏中，单击 **商店**. 然后，在下 **设置**，选择 **配置**.
-1. 在左上角，单击 **商店视图** 选择器并选择 *默认配置*.
-1. 单击 **确定** 在确认对话框中，批准商店视图更改。
+1. 登录到 **[!UICONTROL Admin]** 作为管理员。
+1. 在左侧 **[!UICONTROL Admin]** 侧栏，单击 **[!UICONTROL Stores]**.
+1. 导航到 **[!UICONTROL Settings]** 并选择 **[!UICONTROL Configuration]**.
+1. 在左上角，单击 **[!UICONTROL Store View]** 选择器并选择 **[!UICONTROL *默认配置&#x200B;*]**.
+1. 单击 **[!UICONTROL OK]** 在确认对话框中，批准商店视图更改。
 
 ![change_store_view.png](assets/change_store_view.png)
 
